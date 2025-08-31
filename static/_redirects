@@ -1,4 +1,10 @@
-# Handle WordPress URLs
+# Allow assets to load normally
+/wp-includes/js/* /wp-includes/js/*
+/wp-content/plugins/* /wp-content/plugins/*
+/wp-content/themes/* /wp-content/themes/*
+/wp-content/uploads/* /wp-content/uploads/*
+
+# Handle WordPress admin URLs
 /wp-admin/* /404.html
 /wp-login.php /404.html
 /wp-cron.php /404.html
@@ -7,10 +13,5 @@
 /index.php?p=* /index.html
 /index.php?page_id=* /index.html
 
-# Handle missing assets gracefully
-/wp-includes/js/* /404.html
-/wp-content/plugins/* /404.html
-/wp-content/themes/* /404.html
-
-# Fallback for any missing pages
-/* /index.html
+# Fallback for any missing pages (but not assets)
+/*.html /index.html

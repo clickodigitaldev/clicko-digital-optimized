@@ -1,8 +1,8 @@
-# Fix MIME types for JavaScript files
+# Fix MIME types for JavaScript files - be very specific
 /wp-includes/js/**/*.js
   Content-Type: application/javascript
 
-# Fix MIME types for CSS files  
+# Fix MIME types for CSS files - be very specific
 /wp-content/themes/**/*.css
   Content-Type: text/css
 
@@ -17,15 +17,13 @@
 /wp-content/themes/**/*.js
   Content-Type: application/javascript
 
-# General JavaScript files
+# General file type rules (more specific)
 *.js
   Content-Type: application/javascript
 
-# General CSS files
 *.css
   Content-Type: text/css
 
-# HTML files
 *.html
   Content-Type: text/html
 
