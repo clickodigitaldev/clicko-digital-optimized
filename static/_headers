@@ -1,0 +1,62 @@
+# Fix MIME types for JavaScript files
+/wp-includes/js/**/*.js
+  Content-Type: application/javascript
+
+# Fix MIME types for CSS files  
+/wp-content/themes/**/*.css
+  Content-Type: text/css
+
+# Fix MIME types for plugin assets
+/wp-content/plugins/**/*.js
+  Content-Type: application/javascript
+
+/wp-content/plugins/**/*.css
+  Content-Type: text/css
+
+# Fix MIME types for theme assets
+/wp-content/themes/**/*.js
+  Content-Type: application/javascript
+
+# General JavaScript files
+*.js
+  Content-Type: application/javascript
+
+# General CSS files
+*.css
+  Content-Type: text/css
+
+# HTML files
+*.html
+  Content-Type: text/html
+
+# Images
+*.jpg
+  Content-Type: image/jpeg
+
+*.jpeg
+  Content-Type: image/jpeg
+
+*.png
+  Content-Type: image/png
+
+*.webp
+  Content-Type: image/webp
+
+*.gif
+  Content-Type: image/gif
+
+*.svg
+  Content-Type: image/svg+xml
+
+# Fonts
+*.woff
+  Content-Type: font/woff
+
+*.woff2
+  Content-Type: font/woff2
+
+*.ttf
+  Content-Type: font/ttf
+
+*.eot
+  Content-Type: application/vnd.ms-fontobject

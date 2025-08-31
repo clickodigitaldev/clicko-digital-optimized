@@ -1,0 +1,10 @@
+name = "clicko-digital-optimized"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./static"
+entry-point = "workers-site"
+
+[env.production]
+name = "clicko-digital-optimized"
+workers_dev = true

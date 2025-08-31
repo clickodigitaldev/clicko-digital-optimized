@@ -1,0 +1,16 @@
+# Handle WordPress URLs
+/wp-admin/* /404.html
+/wp-login.php /404.html
+/wp-cron.php /404.html
+
+# Redirect old WordPress URLs to new static structure
+/index.php?p=* /index.html
+/index.php?page_id=* /index.html
+
+# Handle missing assets gracefully
+/wp-includes/js/* /404.html
+/wp-content/plugins/* /404.html
+/wp-content/themes/* /404.html
+
+# Fallback for any missing pages
+/* /index.html
