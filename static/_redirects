@@ -1,13 +1,66 @@
-# Handle WordPress admin URLs only
+# Handle old WordPress URLs and redirect to new static structure
+/index.php?p=63 /about-us/
+/index.php?p=2152 /contact-us/
+/index.php?p=1107 /careers/
+/index.php?p=1348 /partners/
+/index.php?p=2644 /business-websites/
+/index.php?p=2645 /e-commerce-development/
+/index.php?p=2646 /web-applications/
+/index.php?p=2648 /ai-applications/
+
+# Shopify redirects
+/index.php?p=2518 /shopify-web-development/
+/index.php?p=2560 /shopify-store-migration/
+/index.php?p=2562 /shopify-app-development/
+/index.php?p=2563 /shopify-ongoing-support/
+/index.php?p=2564 /shopify-pos/
+
+# Salla redirects
+/index.php?p=2570 /salla-web-development/
+/index.php?p=2571 /salla-store-migration/
+/index.php?p=2572 /salla-app-development/
+/index.php?p=2573 /salla-ongoing-support/
+/index.php?p=2574 /salla-pos/
+
+# Zid redirects
+/index.php?p=2582 /zid-web-development/
+/index.php?p=2583 /zid-store-migration/
+/index.php?p=2584 /zid-app-development/
+/index.php?p=2585 /zid-ongoing-support/
+/index.php?p=2586 /zid-pos/
+
+# WooCommerce redirects
+/index.php?p=2594 /woocommerce-web-development/
+/index.php?p=2595 /woocommerce-store-migration/
+/index.php?p=2596 /woocommerce-app-development/
+/index.php?p=2597 /woocommerce-ongoing-support/
+/index.php?p=2598 /woocommerce-pos/
+
+# Mobile Apps redirects
+/index.php?p=2606 /shopify-mobile-apps/
+/index.php?p=2607 /salla-mobile-apps/
+/index.php?p=2608 /zid-mobile-apps/
+/index.php?p=2609 /woocommerce-mobile-apps/
+/index.php?p=2610 /mobile-apps-maintenance/
+
+# Design redirects
+/index.php?p=2618 /logo-brand-identity/
+/index.php?p=2619 /web-app-design/
+/index.php?p=2620 /print-design/
+/index.php?p=2621 /packaging-covers/
+/index.php?p=2622 /marketing-design/
+
+# Marketing redirects
+/index.php?p=2630 /search-engine-optimization-seo/
+/index.php?p=2631 /google-advertising/
+/index.php?p=2632 /social-media-advertising/
+/index.php?p=2633 /influencer-marketing/
+/index.php?p=2634 /e-commerce-marketing/
+
+# Handle WordPress admin URLs
 /wp-admin/* /404.html
 /wp-login.php /404.html
 /wp-cron.php /404.html
 
-# Handle old WordPress query URLs
-/index.php?p=* /index.html
-/index.php?page_id=* /index.html
-
 # Handle missing pages gracefully (but not assets)
 /*.html /index.html
-
-# Don't redirect assets - let them load normally
