@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicko Digital - Optimized</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/wp-content/uploads/2025/02/logo-02-1024x618.jpg" as="image">
+    
+    <!-- Inline critical CSS -->
+    <style>
+        /* Critical CSS here */
+        body { margin: 0; font-family: Arial, sans-serif; }
+        .header { background: #24223E; color: white; padding: 1rem; }
+        .hero { text-align: center; padding: 3rem 1rem; }
+        .hero img { max-width: 100%; height: auto; }
+    </style>
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="/wp-content/themes/bricks/assets/css/bricks-advanced-themer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/wp-content/themes/bricks/assets/css/bricks-advanced-themer.css"></noscript>
+</head>
+<body>
+    <div class="header">
+        <h1>Clicko Digital</h1>
+    </div>
+    
+    <div class="hero">
+        <img src="/wp-content/uploads/2025/02/logo-02-1024x618.jpg" alt="Clicko Digital Logo">
+        <h2>Digital Excellence</h2>
+    </div>
+    
+    <!-- Defer JavaScript -->
+    <script src="/performance.js" defer></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+</body>
+</html>
